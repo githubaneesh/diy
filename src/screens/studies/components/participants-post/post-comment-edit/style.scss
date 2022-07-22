@@ -1,0 +1,70 @@
+@import '../../../../../styles/looklook-theme/colors';
+
+.comments-container {
+    overflow: auto;
+    flex: 1 1 auto;
+
+    .comments-row {      
+
+        .comment-wrapper {
+            padding: 1rem;
+            &:nth-child(odd) {
+                background-color: $body-background-color;
+            }
+            .comment-edit, .comment-delete {
+                margin-left: 10px;
+                cursor: pointer;
+            }
+            .comment-edit {
+                color: $primary-color;
+            }
+            .comment-delete {
+                color: $alert-color;
+            }
+            .comment-header {
+                display: flex;
+                justify-content: space-between;
+                padding: 0 0 1rem 0px;
+
+                .comment-edit,
+                .comment-delete {
+                    display: none;
+                }
+                .comment-user-type{
+                    font-size: 0.85rem;
+                    color: $dark-gray;
+                }
+            }
+
+            .comment-body {
+                margin-bottom: 10px;
+                &.translate-txt {                    
+                    color: $primary-color;
+                    .highlight,.tag-highlight{
+                        color: $white-color;
+                    }
+                }
+                .comment-edit,
+                .comment-delete {
+                    display: none;
+                    margin-left: 10px;
+                }
+                textarea {
+                    height: 115px;
+                    margin-bottom: 1rem;
+                }
+
+                button {
+                    margin-right: 0.5rem;
+                }
+            }
+        }
+
+        .comment-wrapper:hover {
+            .comment-edit,
+            .comment-delete {
+                display: inline-block;
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+@import '../../styles/looklook-theme/_colors';
+
+.header {
+    padding: 10px;
+    background-image: $background-gradient;
+    .header-inner {
+        max-width: 75rem;
+        margin: auto;
+        .nav {
+            a, button {                
+                font-family: "Avenir Next", "Nunito", Helvetica, Arial, sans-serif;
+                color: $white-color;
+                text-decoration: none;
+                padding: 5px 10px;
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+            button {
+                -webkit-appearance: none;
+                background: transparent;
+                border: none;
+                font-size: 1rem;
+                font-weight: 400;
+                text-shadow: none;
+                cursor: pointer;
+                &:focus {
+                    outline: none;
+                }
+            }
+
+        }
+        .logo {
+            display: table-cell;
+            img {
+                height: 40px;
+                overflow: hidden;
+            }
+        }
+
+        .links {
+            display: table-cell;
+            width: 100%;
+            text-align: right;
+            vertical-align: middle;
+        }
+    }
+}

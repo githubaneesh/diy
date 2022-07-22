@@ -1,0 +1,37 @@
+@import '../../../styles/looklook-theme/icons';
+@import '../../../styles/looklook-theme/colors';
+#accordion {
+    .tab {
+        margin-bottom: 1rem;
+        border: 1px solid $gray-color;
+        .title {
+            background: $body-background-color;
+            cursor: pointer;
+            i {
+                margin-right: 2rem;
+            }
+            .title-inner {
+                padding: 10px;
+                display: inline-block;
+                width: calc(100% - 50px);
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+                span {
+                    vertical-align: middle;
+                }
+            }
+            .options {
+                width: 116px;
+                padding: 10px 0px;
+
+                svg {
+                    vertical-align: middle;
+                }
+            }
+        }
+        .content {
+            padding: 1rem;
+        }
+    }
+}

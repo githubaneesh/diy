@@ -1,0 +1,58 @@
+@import '../../../styles/looklook-theme/colors';
+
+.participants-list {
+    .participant-table {
+        width: 100%;
+        border: 1px solid $dark-gray-color;
+        border-collapse: collapse;
+
+        th {
+            font-weight: normal;
+            text-align: left;
+            color: $black-color;
+            background: $gray-color;
+            border-left: 1px solid $dark-gray-color;
+            border-right: 1px solid $dark-gray-color;
+            padding: 10px 5px;
+
+            button {
+                border: none;
+                background: transparent;
+                padding: 0;
+            }
+        }
+        tr {
+            td {
+                padding: 10px 5px;
+                border-left: 1px solid $dark-gray-color;
+                border-right: 1px solid $dark-gray-color;
+            }
+            .status {
+                text-align: center;
+                button {
+                    padding: 2px 2px;
+                    width: 20px;
+                    height: 20px;
+                }
+                .status-approved {
+                    color: $success-color;
+                }
+                .status-denied {
+                    color: $alert-color;
+                }
+            }
+        }
+        tr:nth-child(odd){
+            background: $body-background-color;
+        }
+        tr:nth-child(even){
+            background: $white-color;
+        }
+        tr:hover {
+            background: $hover-color;
+        }
+    }
+    .participant-nodata {
+        margin-top: 10px;
+    }
+}

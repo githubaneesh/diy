@@ -1,0 +1,35 @@
+@import "../../styles/looklook-theme/colors";
+
+.settings-container{
+    .container{
+        padding: 1rem;
+        border: 1px solid $light-gray-color;
+        background: $lighter-gray-color;
+        border-radius: 10px 10px 10px 10px;
+        margin-bottom: 0;
+    }
+    
+    .title {
+        font-size: 1.8rem;
+    }
+    
+    .spacing{
+        margin-top: 2rem;
+    }
+
+    .password-input {
+        margin-top: 2rem;
+    }
+
+    .btn-container {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .logout{
+            background-color: $dark-gray-color;      
+        }
+    }
+}
+

@@ -1,0 +1,63 @@
+@import '../../../../styles/looklook-theme/colors';
+
+.users-study-list {
+    .user-table {
+        width: 100%;
+        border: 1px solid $medium-gray-color;
+        border-collapse: collapse;
+        border-radius: 10px;
+        border-style: hidden;
+        box-shadow: 0 0 0 1px $medium-gray-color;
+        overflow: hidden;        
+        th {
+            font-weight: normal;
+            text-align: left;
+            color: $black-color;
+            background: $gray-color;
+            padding: 10px 15px;
+
+            button {
+                border: none;
+                background: transparent;
+                padding: 0;
+            }
+        }
+        tr {
+            border: 1px solid $medium-gray-color;
+            td {
+                padding: 10px 15px;
+            }
+            .status {
+                text-align: center;
+                button {
+                    padding: 2px 2px;
+                    width: 20px;
+                    height: 20px;
+                }
+                .status-approved {
+                    color: $success-color;
+                }
+                .status-denied {
+                    color: $accent-blue-color;
+                }
+            }
+        }
+        tr:nth-child(even){
+            background: $lighter-gray-color;
+        }
+        tr:hover {
+            background: $hover-color;
+        }
+        .clickable {
+            cursor: pointer;
+            color: $accent-blue-color;
+        }
+        .hide-profile {
+            cursor: pointer;
+            color: $accent-blue-color;
+        }
+    }
+    .participant-nodata {
+        margin-top: 10px;
+    }
+}

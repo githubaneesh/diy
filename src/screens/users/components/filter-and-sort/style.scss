@@ -1,0 +1,135 @@
+@import '../../../../styles/looklook-theme/colors';
+
+.filter-and-sort {
+    .filter-label {
+        font-size: .875rem;
+        line-height: 1.8;
+        color: $black-color;
+    }
+    .header {
+        background-image: none;
+        background: $white-color;
+        padding: 1rem 0;
+
+        .title {
+            float: left;
+            color: $primary-color;
+            .title-inner {
+                padding: 0;
+                cursor: pointer;
+                background: none;
+                border: none;
+                font-size: 1.8rem;
+                svg {
+                    vertical-align: middle;
+                }
+                span {
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+            }
+        }
+        .search {
+            float: right;
+            input {
+                padding: .5rem;
+                width: 18rem;
+                font-family: inherit;
+                font-size: 1rem;
+                border: 1px solid $medium-gray-color;
+                color: $secondary-color;
+            }
+            input::placeholder {
+                color: $medium-gray-color;
+            }
+        }
+    }
+    .filter-and-sort-body {
+        margin-bottom: 1rem;
+        .title {
+            font-size: 1.25rem;
+            color: $dark-gray-color;
+            margin-bottom: 1rem;
+        }
+        .by-location {
+            input {
+                width: 20rem;
+                background: $white-color;
+            }
+            input::placeholder {
+                color: $medium-gray-color;
+            }
+        }
+        .by-other-locations {
+            margin: 1rem 0px;
+            display: grid;
+            grid-gap: 30px;
+            grid-template-columns: auto auto auto;
+        }
+        .filters {
+            .title {
+                font-size: 1.25rem;
+                color: $dark-gray-color;
+                margin: 1rem 0px;
+            }
+            .filters-inner {
+                display: grid;
+                grid-gap: 30px;
+                grid-template-columns: auto auto auto 150px 150px;
+
+                input[type=number] {
+                    padding: .5rem;
+                    width: 3rem;
+                    font-family: inherit;
+                    font-size: 1rem;
+                    border: 1px solid $medium-gray-color;
+                    color: $secondary-color;
+                }
+            }
+        }
+        .other-filters {
+            margin-top: 1rem;
+            .filters-inner {
+                display: grid;
+                grid-gap: 30px;
+                grid-template-columns: auto 190px 190px 190px 190px;
+
+                .grid-item-inner {
+                    display: flex;
+                    height: 100%;
+                    align-items: center;
+
+                    input[type=checkbox] {
+                        width: 15px;
+                        height: 15px;
+                    }
+                }
+                .last-row{
+                    grid-column-start: 1; 
+                    grid-column-end: 6;
+                    .filters-inner{
+                        .download {
+                            grid-column-start: 5;
+                            .button{
+                                margin-top: 14%;
+                                width: 100%;
+                                .spinner {
+                                    width: 16px;
+                                    height: 16px;
+                                }
+                                .btn-text{
+                                    padding-left: 11px;
+                                }
+                            }
+                            .disable-button{
+                                pointer-events: none;
+                                opacity: 0.5;     
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }        
+    }
+}

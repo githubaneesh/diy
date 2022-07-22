@@ -1,0 +1,54 @@
+@import '../../../../../styles/looklook-theme/colors';
+
+.selected-tag, .active-tag {
+    display: inline-block;
+    color: $dark-gray-color;
+    background: $light-gray-color;
+    border: 1px solid $light-gray-color;
+    cursor: pointer;
+    border-radius: 1rem;
+    padding: 0.3rem 0.5rem;
+    margin: 0 0.5rem 0.5rem 0;
+    button {
+        display: inline-block;
+        vertical-align: middle;        
+        -webkit-appearance: none;
+        background: transparent;
+        border: none;        
+        color: $dark-gray-color;
+        outline: none;
+        cursor: pointer;
+        svg {
+            vertical-align: middle;
+            width: 20px;
+            height: 20px;
+            padding: 2px;
+        }
+    }    
+    .name {
+        font-size: 0.8rem;
+        width: calc(100% - 32px);
+        text-align: left;
+    }
+    .tag-add-post {
+        width: 23px;
+        text-align: center;
+        img {
+            width: 19px;
+            height: 19px;
+        }
+    }
+    .tag-remove-post {
+        width: 23px;
+        text-align: center;
+        img {
+            width: 19px;
+            height: 19px;
+        }        
+    }
+}
+.active-tag {
+    border: 1px solid #27a1ef;
+    color: #27a1ef;
+    background: white;
+}

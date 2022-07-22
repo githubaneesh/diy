@@ -1,0 +1,32 @@
+.add-to-study {
+    .add-to-study-inner {
+        display: flex;
+        align-items: center;
+        .grid-item {
+            width: calc(100%/2 - 460px/2);
+            margin-right: 1rem;
+            &:first-child {
+                width: 300px;
+            }
+            &:last-child {
+                width: 160px;
+                margin-right: 0;
+            }
+        }
+
+        input {
+            border: 1px solid;
+            padding: .55rem;
+            width: 100%;
+        }
+    }
+    .action-container {
+        display: flex;
+        align-items: center;
+        
+        button {
+            margin-top: 24px;
+            margin-left: auto;
+        }
+    }
+}

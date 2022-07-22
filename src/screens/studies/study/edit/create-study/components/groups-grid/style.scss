@@ -1,0 +1,64 @@
+@import "../../../../../../../styles/looklook-theme/colors";
+.groups-grid {
+    padding: 1rem;
+    .groups-grid-inner {
+        margin-top: 1rem;
+    }
+    .groups-table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
+        display: table;
+        border: 1px solid $medium-gray-color;
+        margin-bottom: 1rem;
+        tbody {
+            max-height: 478px;
+            overflow-y: auto;
+            display: block;
+            width: 100%;
+        }
+        tr {
+            display: table;
+            width: 100%;
+            border-bottom: 1px solid $medium-gray-color;
+            th {
+                text-align: left;
+                color: $black-color;
+                background: $body-background-color;
+                padding: 10px;
+                font-weight: normal;
+            }
+            th:first-child {
+                width: 125px;
+            }
+            th,
+            td {
+                text-align: left;
+                padding: 10px;
+                .notes {
+                    display: block;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    cursor: pointer;
+                    // text-decoration: underline;
+                }
+            }
+            td:first-child {
+                width: 24%;
+            }
+            td:last-child {
+                width: 100%;
+                max-width: 0;
+            }
+        }
+        tr:hover {
+            background: rgba($color: $hover-color, $alpha: 1);
+        }
+        tr:last-child {
+            border-bottom: none;
+        }
+    }
+}

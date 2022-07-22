@@ -1,0 +1,45 @@
+@import '../../../../styles/looklook-theme/colors';
+
+.user-details {
+    div {
+        span:first-child {
+            color: $black-color;
+        }
+    }
+    h2 {
+        margin-top: 0;
+    }
+    .profile {
+        .profile-image {
+            float: left;
+            width: 30%;
+            .display-image-container {
+                img {
+                    width: 30%;
+                }
+                .svg {
+                    opacity: 0.3 !important;
+                }
+            }
+        }
+        .profile-details {
+            float: left;
+        }
+    }
+    .participant-bio {
+        span {
+            font-weight: bold;
+        }
+        .participant-bio-inner {
+            min-height: 100px;
+            max-height: 100px;
+            background: $white-color;            
+        }
+    }
+    .participant-notes {
+        textArea {
+            height: 100px;
+            background: $white-color;
+        }
+    }
+}

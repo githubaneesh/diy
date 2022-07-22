@@ -1,0 +1,38 @@
+@import '../../../styles/looklook-theme/colors';
+.overlay {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.modal {
+    min-width: 40%;
+    min-height: 120px;
+    margin: auto;
+    vertical-align: middle;
+    background-color: $body-background-color;
+    border: 1px solid $dark-gray-color;
+    padding: 10px;
+    display: block;
+    overflow: auto;
+    max-height: calc(100vh - 50px);
+
+    .modal-close {
+        text-align: right;
+        z-index: 11;
+        button {
+            border: none;
+            background: transparent;
+            cursor: pointer;
+            svg {
+                color: $dark-gray-color;
+                font-size: 30px;
+            }
+        }
+    }
+}

@@ -1,0 +1,52 @@
+@import "../../../../../styles/looklook-theme/colors";
+
+.select-post-comment-tag {
+    display: flex;
+    width: 390px;
+    background: $primary-color;
+    border-radius: 10px;
+    .dropdown {
+        min-width: 280px;
+    }
+    .css-yk16xz-control, .css-1pahdxg-control {
+        background: $primary-color;
+        border: none;
+        box-shadow: none;
+        &:focus, &:hover {
+            background: $primary-color;
+            border: none;
+            color: $white-color;
+        }
+    }
+    .css-b8ldur-Input {
+        color: $white-color;
+    }
+    .css-1gtu0rj-indicatorContainer {
+        color: $white-color;
+    }
+    .css-tlfecz-indicatorContainer {
+        color: $white-color;
+        &:hover {
+            color: $white-color;
+        }
+    }
+    .css-1okebmr-indicatorSeparator {
+        background-color: $white-color;
+    }
+    .css-1uccc91-singleValue {
+        color: $white-color;
+    }
+    .button {
+        border-left: 1px solid $white-color;
+        padding: 0.18rem 1rem;
+        border-radius: 0 10px 10px 0;
+        margin: 8px 0;
+        outline: none;
+        &.icon-tag {
+            border-right: 1px solid $white-color;
+            border-left: none;
+            padding: 0.18rem 1rem;
+            border-radius: 10px 0 0 10px;
+        }
+    }
+}

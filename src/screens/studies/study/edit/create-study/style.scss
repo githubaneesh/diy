@@ -1,0 +1,172 @@
+@import '../../../../../styles/looklook-theme/colors';
+.create-study {
+    background: $white-color;
+    padding: 1rem;
+    .dropdown-menu {
+        width: 100%;       
+        .dropdown-wrapper {
+            .head {
+                width: 100%;
+            }
+        }
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-gap: 0em;
+        .language-container{
+            display: inline-block;
+            margin-left: 220px;
+            .language-link{
+                display: block;
+                color: #056fc6;
+                max-width: 165px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                cursor: pointer;
+                white-space: nowrap;
+                margin-bottom: 5px;
+                font-size: 14px;
+                text-decoration: underline;
+            }
+            .delete {
+                background: $alert-color;
+            }
+            .default-language-btn{
+                border: none;
+                cursor: pointer;
+                display: inline-block;
+                background-color: transparent;
+                margin-left: -6px;
+                img {
+                    max-height: 46px;
+                    max-width: 52px;
+                    overflow: hidden;
+                }
+            }
+            .disable-transcript-container {
+                margin-top: 10px;
+                margin-bottom: 5px;
+                font-size: 15px;
+                
+                label {
+                    padding-left: 5px;
+                    display: inline;
+                    vertical-align: middle;
+                }
+                #disabled-transcribe {
+                    display: inline;
+                    vertical-align: middle;
+                    width: 20px;
+                    height: 20px;
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+        }
+        .save-container{
+            .save-btn-container{
+                display: inline-block;
+            }
+        }
+
+    }
+    .table-lists {
+        margin-left: 1rem;
+    }
+    .left-container {
+        label {
+            display: block;
+        }
+        .study-name-container {
+            margin-top: 1rem;
+            input {
+                padding-right: 0;
+                width: 100%;
+            }
+        }
+        .organization-name-container {
+            margin-top: 1rem;            
+            .dropdown {
+                margin-top: 0.5rem;
+            }
+        }
+        .study-objective {
+            margin-top: 1rem;
+            textarea {
+                height: 100px;
+            }
+        }
+        .date-picker-container {
+            margin-top: 1rem;
+
+            .calendar-container {
+                .date-picker {
+                    width: 100%;
+                }
+                .open-button {
+                    right: 0;
+                }
+            }
+        }
+        .buttons-container {
+            margin-top: 1rem;
+            grid-template-columns: 50% 50%;
+            .image-container {
+                width: 205px;
+                height: 150px;
+                padding: 10px;
+                margin-bottom: 1rem;
+                border: 1px solid $gray-color;
+                text-align: center;
+                .button {
+                    margin-top: 60px;
+                }
+            }
+            .taglist-container {
+                margin-top: 2rem;
+                button {
+                    margin-right: 10px;
+                }
+                .delete {
+                    background: $alert-color;
+                }
+                .taglist-name {
+                    display: block;
+                    color: $accent-blue-color;
+                    max-width: 165px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    cursor: pointer;
+                    white-space: nowrap;
+                    margin-bottom: 5px;
+                    font-size: 14px;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .group-grid-container {
+        width: 100%;
+        border: 1px solid $gray-color;
+    }
+    .participant-container {
+        border: 1px solid #ddd;
+        padding: 10px;
+    }
+    .uploaded-media {
+        img {
+            max-height: 120px;
+            max-width: 192px;
+            overflow: hidden;
+        }
+    }
+}
+.default-language-modal{
+    min-height: 480px;
+    .modal-footer{
+        position: absolute;
+        bottom: 35px;
+        right: 16px;
+    }
+}

@@ -1,0 +1,8 @@
+@import '../../styles/looklook-theme/_colors';
+
+.footer {
+    width: 100%;
+    height: 5vh;
+    background-image: $background-gradient;
+    color: $light-gray-color; 
+}

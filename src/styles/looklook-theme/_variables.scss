@@ -1,0 +1,30 @@
+
+
+$looklook-font-size: 100%;
+$looklook-width: rem-calc(1200);
+$looklook-lineheight: 1.5;
+$body-antialiased: true;
+$body-font-family: 'Avenir Next', 'Nunito', Helvetica, Arial, sans-serif; // 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$looklook-margin: 1rem;
+$looklook-padding: 1rem;
+$looklook-weight-normal: normal;
+$looklook-weight-bold: bold;
+$looklook-radius: 0;
+$looklook-text-direction: ltr;
+$small-font-size: 80%;
+$paragraph-lineheight: 1.6;
+$paragraph-margin-bottom: 1rem;
+$paragraph-text-rendering: optimizeLegibility;
+
+$lead-font-size: $looklook-font-size * 1.25;
+$lead-lineheight: 1.6;
+$stat-font-size: 2.5rem;
+
+$input-error-font-size: rem-calc(12);
+$input-error-font-weight: $looklook-weight-bold;
+
+$flexvideo-margin-bottom: rem-calc(16);
+$flexvideo-ratio: 4 by 3;
+$flexvideo-ratio-widescreen: 16 by 9;
+
+$space: 20px;

@@ -1,0 +1,54 @@
+@import "../../styles/looklook-theme/colors";
+
+.login {
+    .title {
+        font-size: 1.8rem;
+        line-height: 1;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    .login-inner {
+        background: $lighter-gray-color;
+        padding: 1rem;
+        border: 1px solid $light-gray-color;
+        border-radius: 10px;
+        margin: auto;
+
+        .separator {
+            height: 1px;
+            background-color: $light-gray-color;
+            margin: 1rem 0;
+        }
+
+        .lead {
+            font-size: 125%;
+            line-height: 1.6;
+            width: 80%;
+            margin: auto;        
+        }
+        .login-inputs {
+            width: 50%;
+            border: 1px;
+            margin: auto;
+    
+            .email, .password {
+                margin-bottom: 1rem;
+            }      
+            .forgot-password {
+                text-align: right;
+                font-size: 0.8rem;
+                a {
+                    color: $primary-color !important;
+                    text-decoration: none;
+                }
+            }
+        }
+        .login-button-container {
+            text-align: center;
+            .loader {
+                margin-top:5px;
+                height: 25px
+            }
+        }
+    }
+}

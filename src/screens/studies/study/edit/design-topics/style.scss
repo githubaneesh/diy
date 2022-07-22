@@ -1,0 +1,134 @@
+@import '../../../../../styles/looklook-theme/colors';
+@import './print.scss';
+
+.design-topics {
+    background: $white-color;
+    padding: 1rem;
+    display: block;
+
+    .title-topic {
+        width: 100%;
+        text-align: right;
+        margin-bottom: 1rem;
+        h2 {
+            padding: 0;
+            margin: 0;
+            display: inline-block;
+            margin-right: 20px;            
+        }
+        .study-name {
+            display: none;
+        }       
+    }
+    
+    .groups-tab-container{
+        width: 158px;
+        margin-top: 2rem;
+        position: absolute;
+        .groups-tab-container-inner {
+            width: 100%;
+            a {
+                text-decoration: none;
+                color: inherit;
+                
+                .group-tab {
+                    padding: 10px;
+                    border-radius: 5px 0px 0px 5px;
+                    border: 1px solid $gray-color;
+                    background: $body-background-color;
+                    margin-top: 0.5rem;
+                    cursor: pointer;
+                    white-space: nowrap;
+                    width: 158px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;                    
+
+                }
+                .active {
+                    background: $white-color;
+                    border-right: 1px solid $white-color;
+                    white-space: nowrap;
+                    width: 158px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;               
+                }
+            }
+        }
+    }
+    .group-tab-detail-container{
+        width: calc(100% - 158px);
+        margin-left: 158px;
+        padding: 0 1rem;
+        border: 1px solid $gray-color;
+    }
+    .select-group {
+        .dropdown {
+            width: 250px;
+            margin-left: 10px;
+            display: inline-block !important;
+        }
+    }
+
+    .autosave-container {
+        .autosave-inner {
+            display: inline-block;
+            vertical-align: bottom;
+            width: 60%;
+            .autosave {
+                margin: 1rem 0;
+            }
+        }
+        .dropdown-container {
+            display: inline-block;
+            vertical-align: bottom;
+            margin: 0 0 1rem 1rem;
+            .dropdown {
+                width: 250px;
+            }
+        }
+    }
+    .show-button {
+        display: inline;
+    }
+    .hide-button {
+        display: none;
+    }
+
+
+    #accordion {
+        .tab:nth-child(1) {
+            .edit-topic-panel {
+                .topic-name-container {
+                    .container-right {
+                        .move {
+                            .up {
+                                opacity: 0.2;
+                                pointer-events: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .tab:last-child {
+            .edit-topic-panel {
+                .topic-name-container {
+                    .container-right {
+                        .move {
+                            .down {
+                                opacity: 0.2;
+                                pointer-events: none;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }        
+    }           
+
+}
+
+.copy-modal {
+    min-height: 400px !important;
+}

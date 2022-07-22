@@ -1,0 +1,52 @@
+@import '../../../../../styles/looklook-theme/colors';
+
+.tag {
+    display: inline-block;
+    cursor: pointer;
+    margin: 0 0.5rem 0.5rem 0; 
+
+    .tag-inner {
+        background: $light-gray-color;
+        border-radius: 20px;
+        font-size: small;
+        padding: 0.5rem 1rem;
+
+        button {
+            background: none;
+            border: none;
+        }
+    }
+    .tag-edit {
+        background: $light-gray-color;
+        border-radius: 10px;
+        font-size: small;
+        padding: 3px;
+        input {
+            font-size: inherit;
+            display: inline-block;
+            vertical-align: middle;
+            background: none;
+            border: none;
+            border-bottom: 1px solid $dark-gray-color;
+            width: 150px;
+        }
+        button {
+            font-size: small;
+            display: inline-block;
+            vertical-align: middle;
+            background: $white-color;
+            border-radius: 100%;
+            border: none;
+            cursor: pointer;
+            width: 23px;
+            height: 23px;
+            padding: 5px;
+            color: $success-color;
+            margin: 2px;
+        } 
+        .delete {
+            background: $alert-color;
+            color: $white-color;
+        }     
+    }
+}

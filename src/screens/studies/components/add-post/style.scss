@@ -1,0 +1,58 @@
+
+@import '../../../../styles/looklook-theme/colors';
+
+.Add-Post-Container{
+    .title {
+        font-size: 1.8rem;
+        text-align: center;
+        margin-top: 0px;
+        color: $primary-color;
+        margin-bottom: 30px;
+    }
+    
+    .media-container{
+        display: inline-block;
+        width: 50%;
+        position: relative;
+        vertical-align: top;
+        .blacktxt {
+            color: $black-color;
+        }
+    }
+    .dropdown-wrapper{
+        display: inline-block;
+        width: 50%;
+        .dropdown {
+            padding-bottom: 0.5rem;
+        }
+    }
+    .media-uploaded {
+        display: inline-block;
+    }
+    .uploaded-media {
+        img, video {
+            max-height: 120px;
+            max-width: 192px;
+            overflow: hidden;
+        }
+    }
+    textarea{
+        height: auto;
+    }
+    .button-container{
+        position: relative;
+        float: right;
+        top: 1rem;
+
+        .cancel{
+            background-color: transparent;
+            color: $primary-color;
+            border: 1px solid $primary-color;
+            border-radius: 0;
+            margin-right: 1rem;
+        }
+    }
+    /* .text-muted{
+        color: $dark-gray;
+    } */
+}

@@ -1,0 +1,22 @@
+@import "../../../../styles/looklook-theme/colors";
+
+.filter-input {
+    position: relative;
+    input {
+        padding: .5rem;
+        font-family: inherit;
+        font-size: 1rem;
+        border: 1px solid $medium-gray-color;
+        color: $secondary-color;
+        background: $white-color;
+    }
+    input::placeholder {
+        color: $medium-gray-color;
+    }
+    .button {
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: .75em 1em;
+    }
+}

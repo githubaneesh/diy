@@ -1,0 +1,79 @@
+@import '../../../../../../../../styles/looklook-theme/colors';
+.add-group {
+    padding-top: 1rem;
+    .dialog-modal-content {
+        max-width: 710px;
+        width: 100%;
+    }
+    .label {
+        font-size: 1.5em;
+    }
+    .rec-criteria {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        .recruitment-notes {
+            margin: 5px;
+            margin-left: 0px;
+            font-size: 14px;
+        }
+        .rec-criteria-inner {
+            display: table;
+            width: 100%;
+            div {
+                line-height: 3.4;
+                vertical-align: middle;
+                display: table-row;
+                width: 100%;
+                padding-bottom: 0.5rem;
+                div {
+                    width: 30px;
+                    display: table-cell;
+                    vertical-align: middle;
+                }
+                input[type=text] {
+                    background: $white-color;
+                    display: table-cell;
+                }
+                span {
+                    display: table-cell;
+                    vertical-align: middle;
+                    width: 150px;
+                }
+                textarea {
+                    height: 50px;
+                    background: $white-color;
+                    display: table-cell;
+                }
+                input[type=checkbox] {
+                    width: 20px;
+                    height: 20px;
+                    background: $white-color;
+                    display: table-cell;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+    .group-name {
+        input {
+            background: $white-color;
+        }
+    }
+    .aditional-notes {
+        margin-bottom: 1rem;
+        textarea {
+            height: 100%;
+            background: $white-color;
+        }
+    }
+    .button-container {
+        margin-top: 5px;
+        button {
+            svg {
+                height: 1.2em;
+                width: 1.2em;
+                vertical-align: middle;
+            }
+        }
+    }
+}

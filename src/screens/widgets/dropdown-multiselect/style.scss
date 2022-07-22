@@ -1,0 +1,68 @@
+@import '../../../styles/looklook-theme/colors';
+
+.dropdown-multiselect {
+    position: relative;
+    width: 300px;
+    .dropdown-header {
+        border: 1px solid #ccc;
+        padding: 8px 10px 8px 10px;
+        display: inline-block;
+        border-radius: 4px;
+        background: $white-color;
+        color: hsl(0,0%,55%);
+        width: calc(100% - 10px);//padding
+        .icon {
+            float: right;
+            padding-top: 3px;
+            color: #ccc;
+            font-size: 14px;
+            border-left: 1px solid #ccc;
+            padding-left: 10px;
+        }        
+        svg {
+            padding-right: 5px;
+        }
+    }
+    .dropdown-list{
+        position: absolute;
+        z-index: 11;
+        width: 100%;
+        top: 10;
+        left: 0;
+        display: none;
+        list-style-type: none;
+        margin: 0;
+        margin-top: 4px;
+        border-radius: 5px;        
+        padding: 6px;
+        max-height: 185px;
+        overflow-y: auto;
+        background-color: $white-color;
+        border: 1px solid $gray-color;
+        font-size: small;
+    
+        .list-item {
+            input[type="checkbox"] {
+                width: 20px;
+                height: 20px;
+                display: inline-block;
+                vertical-align: middle;
+            }
+            .label {
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+        .list-item:hover {
+            background: rgba($color: $hover-color, $alpha: 1);
+        }
+        .until-enabled {
+            background: $gray-color;
+            border-top: 1px solid $dark-gray-color;
+            font-size: 15px;
+        }
+    }
+    .active {
+        display: block;
+    }
+}

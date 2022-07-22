@@ -1,0 +1,16 @@
+@import "../../../styles/looklook-theme/colors";
+
+.study-view {
+    .group-and-tag-list-container {
+        padding: 1rem;
+        background: $snow-color;
+        border: 1px solid $light-gray-color;
+        border-radius: 13px;
+        margin-bottom: 1rem;
+
+        .tag-list-container {
+            margin-top: 1rem;
+        }
+
+    }
+}

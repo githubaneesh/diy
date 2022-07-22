@@ -1,0 +1,113 @@
+@import '../../../styles/looklook-theme/colors';
+.dropdown-active {
+    display: block;
+    .dropdown-list {
+        display: block;
+        z-index: 999;
+    }
+}
+.dropdown-active {
+    .dropdown-list {
+        display: block !important;
+    }
+}
+
+.dropdown-menu {
+    display: inline-block;
+
+    .dropdown-wrapper {
+        position: relative;
+    
+        .dropdown-list {
+            margin: 0;
+            margin-top: 4px;
+            border-radius: 5px;            
+            border: 1px solid $gray-color;
+            padding: 10px;
+            width: 100%;
+            display: inline-block;
+            background: $white-color;
+            line-height: 2;
+            position: absolute;
+            display: none;
+            li {
+                list-style: none;
+                clear: both;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                word-break: break-word;
+                background: $white-color;
+                .menu-title {
+                    margin-left: 8px;
+                }
+                .icon-right {
+                    padding-left: 10px;
+                    padding-top: 3px;
+                    color: $dark-gray-color;
+                    svg {
+                        vertical-align: middle;
+                    }
+                }
+            }
+        }
+    }
+
+    .head {
+        border: 1px solid #ccc;
+        padding: 10px 10px 6px 10px;
+        width: 380px;
+        display: inline-block;
+        border-radius: 4px;
+        background: $white-color;
+        color: hsl(0,0%,55%);
+        .icon {
+            float: right;
+            padding-top: 3px;
+            color: #ccc;
+            font-size: 14px;
+            border-left: 1px solid #ccc;
+            padding-left: 10px;
+        }
+    }
+    .content-active {
+        display: block !important;
+    }
+    .content {
+        display: none;
+        max-height: 200px;
+        overflow-y: auto;
+        .search-input {
+            width: calc(100% - 40px); //40px padding
+            border: none;
+            background: none;
+            border-bottom: 1px solid #d6d6d6;
+        }
+        ul {
+            padding-inline-start: 10px;
+        }
+        li {
+            overflow: visible;
+            white-space: normal;
+            height: auto;
+            padding: 2px;
+            cursor: pointer;
+        }
+        li:hover {
+            background: rgba($color: $hover-color, $alpha: 1);
+        }
+    }
+}
+
+.dropdown-disabled {
+    background-color: $light-gray-color;
+    opacity: 1;
+    cursor: not-allowed;    
+    pointer-events: none;
+    .head {        
+        background: $light-gray-color;
+    }
+    .dropdown-list {
+        display: none;
+    }
+}

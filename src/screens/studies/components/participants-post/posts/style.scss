@@ -1,0 +1,34 @@
+@import "../../../../../styles/looklook-theme/colors";
+
+.comments-container {
+    overflow: auto;
+    flex: 1 1 auto;
+    .comments-row {
+        .comment-wrapper {
+            .comment-header {
+                display: flex;
+                justify-content: space-between;
+                padding: 1rem 0px;
+            }
+            .comment-body {
+                .readonly-textarea {
+                    border: none;
+                    background: none;
+                    outline:0px none transparent;
+                }    
+                .tag-text {
+                    border: 1px solid;
+                    cursor: pointer;
+                }  
+                .selected-tag, .active-tag {
+                    .name {
+                        width: calc(100% - 55px);
+                    }
+                    button {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }    
+}

@@ -1,0 +1,216 @@
+@import "../../../../styles/looklook-theme/colors";
+
+.participant-posts {
+    border: 1px solid $light-gray-color;
+    border-radius: 10px;    
+    .participant-post-header {
+        background-color: $lighter-gray-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        .header-wrapper {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            padding: 1rem;
+            border-bottom: 1px solid $light-gray-color;
+            h3 {
+                width: 33%;
+                font-size: 1.8rem;
+                margin: 0;
+                font-weight: normal;
+                margin-right: auto;
+            }
+            .print-icon {
+                width: 33%;
+                cursor: pointer;
+                width: 30px;
+                height: 30px;
+            }
+            .disable-print-icon {
+                pointer-events: none;
+                opacity: 0.5;     
+            }
+            .create-post {
+                width: 33%;
+                min-width: 100px;
+                cursor: pointer;
+                color: $primary-color;
+                margin-left: auto;
+                text-align: right;
+            }
+        }
+    }
+    .container-body {
+        height: 84%;
+        display: flex;
+        flex-direction: row;
+        .image-gallery-container {
+            width: 16%;
+            max-height: 90vh;
+            overflow-y: scroll;
+            border-bottom-left-radius: 10px;
+            border-top: 1px solid $light-gray-color;
+            background-color: $medium-gray-color;
+            padding: 1rem;
+            overflow: auto;   
+        }
+        .paticipant-detail-container {
+            width: 84%;
+            min-height: 600px;
+            max-height: 90vh;
+            display: flex;
+            flex-direction: column;            
+            .participant-details {
+                padding: 1rem;
+                .user-info {
+                    height: 160px;
+                    overflow: auto;
+                    h4 {
+                        color: $primary-color;
+                        font-size: 1.8rem;
+                        font-weight: normal;
+                        margin: 0 0 0.5rem;
+                    }
+                    > div {                        
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 0.5rem;
+                        .info {
+                            color: $dark-gray-color;
+                        }    
+                        .desc {
+                            text-transform: capitalize;
+                        }                    
+                    }
+                    .row1 {
+                        span {
+                            font-size: 22px;
+                        }
+                    }
+                    .row2 {
+                        div {   
+                            width: 30% ;                       
+                            &:nth-child(1) {
+                                width: 40%;
+                            }
+                        }
+                    }
+                    .row3 {
+                        height: 15%;
+                        div {
+                            width: 60%;
+                            &:nth-child(1) {
+                                width: 40%;
+                            }
+                        }
+                    }
+                    .row4 {
+                        height: auto;
+                    }
+                }
+                .user-action {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    .col2 {
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        .delete-post {
+                            margin-top: 0.5rem;
+                            color: $alert-color;
+                            cursor: pointer;
+                            text-align: right;
+                        }
+                    }
+                    .cancel{
+                        background-color: $white-color;
+                        color: $primary-color;
+                        border-color: $primary-color;
+                    }
+                    .remove{
+                        margin-left: 1rem;
+                        background-color: $alert-color;
+                    }
+                }
+            }
+            .post-comments {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                height: calc(100% - 317px);
+                .question-row {
+                    max-height: 100px;
+                    padding: 0.5rem 1rem 0.5rem 0.5rem;
+                    background-color: #c3c4c3;
+                    flex: none;
+                    overflow: auto;
+                }
+                .translated-question-row{
+                    .translated-question {
+                        display: block;
+                        color: #27a1ef;
+                    }
+                }
+                .nocomment {
+                    font-size: 2rem;
+                    text-align: center;
+                    color: $dark-gray;
+                    font-weight: normal;
+                    margin: 1rem;
+                }
+            }
+            .comment-box {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                border-top: 1px solid $light-gray-color;
+                padding: 1rem;
+            }   
+            &.hide-comments {
+                .post-comments { 
+                    height: calc(100% - 227px);
+                }       
+                .comment-box {
+                    display: none;
+                }
+            }       
+        }
+        .nocomment-box {  
+            color: $dark-gray;  
+            padding: 1rem;
+            font-size: 1.8rem;
+            text-align: center;
+            width: 100%;
+            min-height: 500px;
+            span {
+                color: $primary-color;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+
+.delete-post-modal{  
+    .content {
+        min-height: 100px;
+    }
+    .delete-modal-button{
+        float: right;
+        .remove{
+            margin-left: 1rem;
+            background-color: $alert-color;
+        }
+    }
+    .delete-status{
+        display: inline;
+        .loader-text{
+            vertical-align: super;
+        }
+    }
+}

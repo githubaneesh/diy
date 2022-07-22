@@ -1,0 +1,81 @@
+@import "../../styles/looklook-theme/colors";
+
+.main-container {
+    .app-path {
+        padding: 1.25vh 2.5vh;
+        background: $lighter-gray-color;
+        // margin-left: -1rem;
+        // margin-right: -1rem;
+        margin-bottom: 2rem;
+        border: 1px solid #d6d6d6;
+
+        p {
+            color: #2199e8;
+            margin: 0;
+        }
+    }
+
+    .studies-container {
+        .study-type {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            .create-study {
+                cursor: pointer;
+                padding: 0;
+                margin-left: auto;
+                span {
+                    font-size: 1.15rem;
+                    color: $primary-color;
+                }
+            }
+
+            .hidden-text {
+                font-size: 1.15rem;
+                margin-left: 5rem;
+                input[type="checkbox"] {
+                    padding: 0;
+                    margin: 0;
+                    position: relative;
+                    top: 2px;
+                }
+            }
+        }
+        
+        .study-search{
+            width: 40%;
+            margin-bottom: 14px;
+            input[type=text] {
+                padding: 6px 6px;
+                line-height: 12px;
+            }
+        }
+        .divider-space {
+            margin: 2rem 0 1rem;
+            &.hr {
+                position: relative;
+                text-align: center;
+                span {
+                    position: relative;
+                    z-index: 1;
+                    display: inline-block;
+                    margin: 0 auto;
+                    background: $white-color;
+                    padding: 0.5em 1rem;
+                    color: $medium-gray-color;
+                }
+                &::before,
+                &::after {
+                    position: absolute;
+                    content: "";
+                    background: $medium-gray-color;
+                    height: 1px;
+                    width: 100%;
+                    left: 0;
+                    top: 20px;
+                    position: absolute;
+                }
+            }
+        }
+    }
+}

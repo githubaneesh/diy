@@ -1,0 +1,15 @@
+/**
+    NOTE: icons varibaled name should extend with -icon extenstion, 
+    so it will be easy to understand
+    For example: $sample-icon
+*/
+
+.icon-down{
+    background: url(../../assets/drop.png) no-repeat; 
+    width: 20px;
+    height: 15px;
+}
+.icon-up {
+    @extend .icon-down;
+    transform: rotate(180deg);
+}

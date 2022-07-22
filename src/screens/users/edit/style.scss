@@ -1,0 +1,173 @@
+@import "../../../styles/looklook-theme/colors";
+
+.create-user {
+    .title-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .grid-item {
+            width: 33%;
+            &:nth-child(2) {
+                text-align: center;
+                font-size: 1.8rem;
+            }
+            &:last-child {
+                text-align: right;
+                button {
+                    border: none;
+                    background: none;
+                    color: $primary-color;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .actions {
+        padding: 1rem;
+        border: 1px solid $light-gray-color;
+        border-bottom: none;
+        background: $lighter-gray-color;
+        border-radius: 10px 10px 0px 0px;
+        margin-bottom: 0;
+        .action-inner {
+            .action-button{
+                margin-top: 0.25rem;
+                display: flex;
+                justify-content: space-between;
+                button {
+                    width: calc(100% / 6);
+                    margin: 0 0.5rem;
+                    height: 120px;
+                    background: none;
+                    border: 1px solid $medium-gray-color;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    font-size: inherit;
+                    color: $secondary-color;
+                    outline: none;
+                    &:first-child {
+                        margin-left: 0;
+                    }
+                    &:last-child {
+                        margin-right: 0;
+                    }
+    
+                    &:hover {
+                        background: $accent-blue-color;
+                        color: $white-color;
+                    }
+                }
+    
+                .selected {
+                    background: $primary-color;
+                    color: $white-color;
+                }
+            }
+           
+        }
+    }
+    .user-fields {
+        padding: 0 1rem 1rem;
+        border: 1px solid $medium-gray-color;
+        border-top: none;
+        background: $lighter-gray-color;
+        border-radius: 0px 0px 10px 10px;
+        margin-top: 0;
+        .label {
+            display: block;
+        }
+        .organization-list, .study-options {
+            margin-bottom: 1rem;
+            .dropdown {
+                max-width: 550px;
+                .css-yk16xz-control {
+                    background: transparent;
+                }
+            }
+        }
+        .study-options {
+            margin-top: 1rem;
+        }
+    }
+    .css-yk16xz-control {
+        background: transparent!important;
+    }
+}
+
+.edit-user {
+    .title-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .grid-item {
+            width: 33%;
+            &:nth-child(2) {
+                text-align: center;
+                font-size: 1.8rem;
+            }
+            &:last-child {
+                text-align: right;
+                button {
+                    border: none;
+                    background: none;
+                    color: $primary-color;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .actions {
+        padding: 1rem;
+        border: 1px solid $light-gray-color;
+        border-bottom: none;
+        background: $lighter-gray-color;
+        border-radius: 10px 10px 0px 0px;
+        margin-bottom: 0;
+    }
+    .action-inner {
+        display: none;
+    }
+    .user-fields {
+        padding: 1rem;
+        border: 1px solid $light-gray-color;
+        border-top: none;
+        background: $lighter-gray-color;
+        border-radius: 0px 0px 10px 10px;
+
+        .organization-list, .study-options {
+            margin-bottom: 1rem;
+            .dropdown {
+                max-width: 550px;
+                .css-yk16xz-control {
+                    background: transparent;
+                }
+            }
+        }
+        .study-options {
+            margin-top: 1rem;
+        }
+    }
+    .css-yk16xz-control {
+        background: transparent!important;
+    }
+    .basic-details {
+        .gpassword {
+            margin-top: 0;
+        }
+    }  
+}
+
+.btn-container{
+    margin-top: 1rem;
+}
+
+.form-error{
+    font-size: .75rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    .error-msg{
+        color: $alert-color;
+    }
+
+}

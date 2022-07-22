@@ -1,0 +1,24 @@
+@import '../../../styles/looklook-theme/colors';
+
+.private-policy {
+    .privacy-policy-content {
+        .title {
+            font-size: 1.8rem;
+            color: $accent-blue-color;
+            text-align: center;
+        }
+        .content {
+            line-height: 1.5rem;
+            text-align: center;
+        }
+    }
+
+    .btn-container {
+        text-align: center;
+    }
+
+    a {
+        color: $primary-color;
+        text-decoration: none;
+    }
+}

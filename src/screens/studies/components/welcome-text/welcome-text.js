@@ -1,0 +1,6 @@
+export const WelcomeText = {
+    CLIENT: "Welcome to LookLook®! Get ready to see the world of your consumers through new eyes. This tool allows us to conduct deep-dive ethnographic research with people right on their smartphones. In your commissioned study, this is the place you can log on to see the data as it is emerging. Every participant interacts with us one-on-one for maximum intimacy and genuine, fun (and telling!) conversation. We share photos and videos back and forth with each participant; and in so doing, illuminate findings that have never been possible with traditional research methodologies. Welcome to LookLook®!",
+    CLIENT_ADMINISTRATOR: `<p>Welcome to LookLook®! Get ready to see the world of your consumers through new eyes. This tool allows you to conduct deep-dive ethnographic research with people right on their smartphones. Here you can request study recruitment specs, set up a study, design your own topics, moderate and analyze!</p>
+    <p>You can also access your data through the Analysis Tool, which allows for easy scanning of tagged themes by group, participant or tag. This is available for all of the studies you commission with LookLook®! Each of them is also searchable by keyword through the Analysis Tool.</p>
+    <p>Happy sleuthing!</p>`
+}

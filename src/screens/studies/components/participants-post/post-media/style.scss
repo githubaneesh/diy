@@ -1,0 +1,49 @@
+@import "../../../../../styles/looklook-theme/colors";
+
+.post-media-modal {
+    width: 80vw;
+    max-width: 72rem;
+    padding: 0;
+    border: 0;
+    background: $white-color;
+    .post-media {
+        .media-carousel, .media-content {
+            vertical-align: top;
+            display: inline-block;
+            width: 50%;
+        }
+        .media-carousel {
+            background: $body-background-color;    
+            padding: 1rem;
+            .carousel-slider {
+                height: 520px;
+                display: flex;
+                align-items: center;
+                .slider {                    
+                    align-items: center;                    
+                    background: $body-background-color; 
+                    &::before {
+                        display: none;
+                    }
+                }
+                .carousel-status {
+                    width: auto!important;
+                    margin: 0;
+                    right: 0;
+                    text-shadow: none!important;
+                    font-size: 1rem!important;
+                    padding: 0.25rem 1.5rem!important;
+                }
+            }
+        }
+        .media-content {
+            padding: 1rem;
+            .form-content {
+                margin-top: 1rem;
+            }
+        }
+    }
+    textarea {
+        height: auto;
+    }
+}

@@ -1,0 +1,26 @@
+.move {
+    width: 50px;
+    display: inline-block;
+
+    button {
+        border: none;
+        background: transparent;
+        svg {
+            font-size: 30px;
+        }
+    }
+
+    .disable-up {
+        opacity: 0.2;
+        pointer-events: none;
+        cursor: default;
+    }
+
+    .disable-down {
+        opacity: 0.2;
+        pointer-events: none;
+        cursor: default;
+    }
+
+}
+

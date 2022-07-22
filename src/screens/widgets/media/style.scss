@@ -1,0 +1,122 @@
+@import '../../../styles/looklook-theme/colors';
+.uploaded-media {
+    display: inline-block;
+    position: relative;
+    svg {
+        font-size: 40px;
+        opacity: 0.3;
+    }
+}
+
+.large-image {
+    text-align: center;
+    padding: 0 3rem;
+    img {
+        width: auto !important;
+        max-width: 100%;
+        max-height: 500px;
+    }
+    video {            
+        width: auto !important;
+        max-width: 100%;
+        max-height: 500px;
+    }    
+    .media-edit {
+        position: absolute;
+        bottom: 5px;
+        cursor: pointer;
+        left: calc(50% - 18px); // icon width 36/2 
+        svg {
+            font-size: 16px;
+            opacity: 1;
+            color: $white-color
+        }
+        .delete {
+            background: $alert-color;
+            padding: 5px 9px;
+            border: 1px solid $gray-color;
+        }
+    }
+}
+.carousel-media-modal {
+    .carousel-slider {
+        background: $white-color;               
+        height: 500px;
+        display: flex;
+        align-items: center;
+        .slider {                    
+            align-items: center;                    
+            background: $white-color; 
+            &::before {
+                display: none;
+            }
+            .slide {                               
+                background: $white-color; 
+            }
+            .large-image {
+                height: 500px;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                .display-image-container {                    
+                    width: 500px;
+                }
+            }
+        }
+        .carousel-status {
+            width: auto !important;
+            top: 0.25rem;
+            right: 3rem;
+            text-shadow: none !important;
+            font-size: 1rem !important;
+            padding: 0.25rem 1.5rem !important;
+            margin: 0;
+        }
+    }
+}
+.carousel {
+    .carousel-status {
+        background-color: $primary-color;
+        border-radius: 15px !important;
+        width: 45px !important;
+        padding: 9px !important;
+        font-size: 12px !important;
+    }
+}
+.carousel.carousel-slider {
+    .control-arrow {
+        &::before {
+            content: '';
+            border: solid $secondary-color;
+            border-width: 0 4px 4px 0;
+            border-top: none!important;
+            border-right: 4px solid $secondary-color!important;
+            border-bottom: 4px solid $secondary-color!important;
+            border-left: none!important;
+            display: inline-block;
+            padding: 10px;
+        }
+        &.control-prev {
+            left: 0!important;
+            &::before {
+                transform: rotate(135deg);
+                -webkit-transform: rotate(135deg);
+            }
+        }   
+        &.control-next {
+            right: 0!important;
+            &::before {
+                transform: rotate(-45deg);
+                -webkit-transform: rotate(-45deg);
+            }
+        }
+        &:hover {
+            background: transparent !important;
+            &::before {
+                border-color: $primary-color!important;
+            }
+        }
+    }
+}
+
+

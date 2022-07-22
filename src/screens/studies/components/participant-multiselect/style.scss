@@ -1,0 +1,63 @@
+
+@import '../../../../styles/looklook-theme/colors';
+
+.multiselect-container{
+    height: 6rem;
+    width: 100%;
+    max-width: 100%;
+    padding-right: 50px;
+    margin-top: 0.5rem;
+    min-height: 1px;
+    margin-bottom: 0;
+    line-height: 1.5;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    border: 1px solid $medium-gray-color;
+    margin: 0 0 1rem;
+    color: $secondary-color;
+    overflow: auto;
+    .multiselect-options{
+        color: $black-color;
+        display: inline-block;
+        line-height: 1.45;
+        float: left;
+        margin: 2px 0 2px 3px;
+        padding: 0;
+        margin: 0;
+
+        ul{
+            list-style-type: disc;
+            line-height: 1.6;
+            list-style-position: outside;
+        }
+
+        .option {
+            background: $light-gray-color;
+            border: 0;
+            border-radius: 0;
+            color: #333333;
+            padding: 0 4px;
+            display: inline-block;
+            line-height: 1.45;
+            float: left;
+            margin: 2px 0 2px 3px;
+            max-width: 100%;
+
+            .option-text{
+                padding-left: 0.9375rem;
+                font-size: 0.85rem;
+            }
+            .remove-btn{
+                float: right;
+                color: $primary-color;
+                cursor: pointer;
+            }
+
+            .remove-btn:not(:hover) {
+                opacity: 0.5;
+            }
+        }
+
+    }
+
+}

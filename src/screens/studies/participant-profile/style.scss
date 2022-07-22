@@ -1,0 +1,71 @@
+
+@import '../../../styles/looklook-theme/colors';
+.participant-profile {
+    .participant-bio {
+        margin: 1rem 0;
+        background: $lighter-gray-color;
+        border: 1px solid $light-gray-color;
+        border-radius: 10px;
+        padding: 1rem;
+
+        textarea{
+            height: auto;
+        }
+    }
+
+    .participant-title{
+        .title-row{
+            display: inline-block;
+            
+            .participant-name{
+                display: inherit;
+                margin-right: 1rem;
+                h3 {
+                    font-size: 1.8rem;
+                    margin: 0;
+                    font-weight: normal;
+                }
+            }
+            .delete-participant{
+                color: $alert-color;
+                cursor: pointer;
+            }
+        }
+        .title-group {
+            float: right;
+        }
+        
+    }
+    .participant-user-details {
+        ul {
+            margin: 1rem 0;
+        }
+    }
+    .autosave {
+        margin-top: 1rem;
+        .heading {
+            margin-bottom: 0.5rem;
+            font-weight: normal;
+        }
+    }
+
+    .list-inline{
+        list-style: none;
+        padding-left: 0px;
+        li {
+            display: inline-block;
+            padding-right: 2rem;
+            span {
+                &:first-child {
+                    color: $black-color;
+                }
+            }
+        }
+    }
+}
+
+.delete-participant-modal{
+    .delete-participant-button{
+        float: right;
+    }
+}

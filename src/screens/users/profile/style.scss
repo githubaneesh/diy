@@ -1,0 +1,158 @@
+@import "../../../styles/looklook-theme/colors";
+
+.profile {
+    .profile-inner {
+        .profile-user-details {
+            background: $lighter-gray-color;
+            border: 1px solid $light-gray-color;
+            padding: 1rem;
+            border-radius: 10px;
+            font-size: .875rem;
+
+            .profile-image-container {
+                display: flex;
+                align-items: center;
+
+                .uploaded-media {
+                    .media-image {
+                        img {
+                            max-width: 150px;
+                        }
+                    }
+                }
+            }
+
+            .title {
+                display: grid;
+                grid-template-columns: auto auto;
+
+                .grid-item {
+                    .name {
+                        font-size: 1.8rem;
+                        margin-right: 1rem;
+                    }
+                }
+
+                .delete-participant{
+                    color: $alert-color;
+                    cursor: pointer;
+                    font-size: 1.0rem;
+                }
+
+                .grid-item:last-child {
+                    text-align: right;
+                    color: $medium-gray-color;
+
+                    .prospect-label {
+                        color: $dark-gray-color;
+                        font-size: 1.8rem;
+                        margin-right: 1rem;
+                        vertical-align: middle;
+                    }
+
+                    button {
+                        background: $lighter-gray-color;
+                        border: 1px solid $dark-gray-color;
+                        color: $dark-gray-color;
+                    }
+                }
+            }
+
+            .details {
+                .details-row {
+                    display: grid;
+                    grid-template-columns: auto auto auto;
+                    margin-top: 1rem;
+                    font-size: 1rem;
+                    line-height: 1;
+                    span {
+                        text-transform: capitalize;
+                        &:first-child {                            
+                            color: $black-color;
+                        }
+                    }
+
+                    .details-row-inner {
+                        display: grid;
+                        grid-template-columns: auto auto auto;
+                    }
+                }
+            }
+        }
+
+        .column-with-image {
+            display: grid;
+            grid-template-columns: 200px auto;
+        }
+
+        .column-without-image {
+            display: grid;
+            grid-template-columns: 0px auto;
+        }
+    }
+
+    .user-bio {
+        background: $lighter-gray-color;
+        border: 1px solid $light-gray-color;
+        padding: 1rem;
+        border-radius: 10px;
+        font-size: .875rem;
+        margin: 1rem 0;
+
+        .autosave {
+            padding: 0;
+            margin: 0;
+
+            .heading {
+                font-size: 1.8rem;
+                font-weight: normal;
+                margin-bottom: 1rem;
+            }
+
+            textarea {
+                height: auto;
+                padding: 1rem;
+            }
+            .label-saving {
+                background: $lighter-gray-color;
+                padding: 5px 10px;
+                right: 1px;
+                bottom: 1px;
+            }
+        }
+
+    }
+
+    .divider-space {
+        margin: 2rem 0;
+        &.hr {
+            position: relative;
+            text-align: center;
+            span {
+                position: relative;
+                z-index: 1;
+                display: inline-block;
+                margin: 0 auto;
+                background: $white-color;
+                padding: 0.5em 1rem;
+                color: $medium-gray-color;
+            }
+            &::before,
+            &::after {
+                position: absolute;
+                content: "";
+                background: $medium-gray-color;
+                height: 1px;
+                width: 100%;
+                left: 0;
+                top: 20px;
+                position: absolute;
+            }
+        }
+    }
+
+    .participant-container {
+        margin-top: 1rem;
+    }
+
+}

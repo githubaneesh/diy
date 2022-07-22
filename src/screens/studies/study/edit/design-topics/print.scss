@@ -1,0 +1,173 @@
+
+@import '../../../../../styles/looklook-theme/colors';
+
+@media print {
+    @page { margin: 1cm 0; }
+    body { margin: 0.5cm 0; }
+
+    .main-container{
+        .header{
+            .header-inner{
+                .links{
+                    display: none;
+                }
+            }
+        }
+    }
+    .autosave-container {
+        .autosave-inner {
+            width: auto !important;
+        }
+        .dropdown {
+            display: none;
+        }
+        .label-saving {
+            display: none;
+        }
+    }
+    #accordion {
+        -webkit-print-color-adjust: exact;
+        .tab {
+            .title {
+               page-break-inside: avoid;
+               .options {
+                   display: none;
+               }
+            }
+        }
+        .move {
+            display: none;
+        }
+        .question-action-area {
+            display: none;
+            width: 0;
+        }
+        .questions-table {
+            tr {
+                td:nth-child(2) {
+                    width: 240px;
+                }
+                td:nth-last-child(2) {
+                    width: 0;
+                    min-width: 0;
+                }
+                td:nth-last-child(1) {
+                    width: 0;
+                    min-width: 0;
+                }
+            }
+            .add-question-panel {
+                display: none;
+            }
+            .question-edit {
+               .edit-action-aream {
+                   display: none;
+               }
+               .print-only {
+                   display: inline-block;
+               }
+               .no-print {
+                   display: none;
+               }
+               .res-disabled {
+                   display: none;
+               }
+               .no-media-print-only {
+                    display: inline-block;
+               }
+            }
+        }
+        .content {
+             overflow: visible;
+             .question {
+                 overflow: visible;
+             }
+            .button-add-question {
+                display: none;
+            }
+            .edit-topic-panel {
+                display: none;
+            }
+        }
+    }
+    .study-edit{
+        .tabs {
+            display: none !important;
+        }
+        .print-btn{
+            display: none;
+        }
+    }
+    .header {
+        -webkit-print-color-adjust: exact;
+        background: $gray-color !important;
+        padding-bottom: 10px;
+        a {
+           display: none;
+       }
+    }
+    .body-container {
+        .body-inner {
+            border: none !important;
+        }
+    }
+    .title-topic {
+        button {
+            display: none;
+        }
+        .study-instruction {
+            display: none !important;
+        }
+        .study-name {
+            text-align: left;
+            display: block !important;
+        }
+    }
+    .group-tab-detail-container  {
+        float: none !important;
+        width: 100% !important;
+        border: none !important;
+        padding-left: 0 !important;
+        margin-left: 0 !important;
+    }
+    .groups-tab-container {
+        display: none;
+    }
+    .title {
+        display: none;
+    }
+    .Toastify {
+        display: none;
+    }
+    .add-topic-panel {
+        display: none;
+    }
+    .no-print {
+        display: none;
+    }
+    .navigation-button-container {
+        display: none !important;
+    }
+
+    .autosave {
+        .rdw-editor-wrapper {
+            .rdw-editor-toolbar {
+                display: none;
+            }
+            .rdw-editor-main{
+                height: auto !important;
+                max-height: 100% !important;
+                .DraftEditor-root {
+                    height: auto !important;
+                    max-height: 100% !important;
+                }
+            }
+        }
+    }
+    .group-details-component{
+        display: none;
+        /*.group-details-container-inner {
+            width: calc(100% - 25px) !important;
+        }*/
+    } 
+}

@@ -1,0 +1,48 @@
+@import '../../../styles/looklook-theme/colors';
+
+.autosave {
+    position: relative;
+    margin: 1rem 0px;
+    .heading {
+        font-weight: bold;
+        cursor: pointer;
+        span {
+            vertical-align: middle;
+        }
+    }
+    .disabled {
+        pointer-events: none;
+    }
+    .label-saving {
+        position: absolute;
+        bottom: 5px;
+        right: 25px;
+        color: $success-color;
+    }
+    .rdw-editor-wrapper {
+        margin-top: 1rem;
+        border: 1px solid $gray-color;
+        background: $gray-color;
+
+        .rdw-editor-main{
+            height: 150px;
+            max-height: 150px;
+            .DraftEditor-root {
+                height: 90px;
+                max-height: 90px;
+                padding: 3px;
+            }
+        }
+        .rdw-editor-toolbar {
+            padding: 0;
+        }
+    }
+    .collapse {
+        display: none;
+
+        .label-saving {
+            display: none;
+        }
+    }
+}
+

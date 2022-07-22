@@ -1,0 +1,22 @@
+.basic-details {    
+    .name , .birthage   {
+        display: grid;
+        grid-column-gap: 1rem;
+        grid-template-columns: auto auto;
+    }
+    .email, .birthdate, .phone, .age, .password {
+        margin-top: 1rem;
+    }
+    .gpassword {
+        margin-top: 1rem;
+    }
+    .gender-select {
+        margin-top: 1rem;
+        .gender {
+            display: flex;
+            justify-content: space-between;
+            width: 70%;
+        }
+    }
+
+}

@@ -1,0 +1,58 @@
+@import '../../../../../../../styles/looklook-theme/colors';
+@import '../../../../../../../styles/looklook-theme/looklook-style.scss';
+
+.add-topic-panel{
+    margin-bottom: 1rem;
+    .panel {
+        position: relative;
+        margin-bottom: 10px;
+    }
+    
+    .tab {
+        .title {
+            padding: 10px;
+            background:  $body-background-color;    
+            cursor: pointer;
+        }
+    }
+
+    .adjust-top {
+        margin-top: -5px;
+    }
+    .content{
+        padding:10px;
+        border: 1px solid $gray-color
+    }
+    .instruction-container {
+        .container-right {
+            float: left;
+            width: 50%;
+
+            .container-right-inner {
+                margin-left: 1rem;
+                margin-top: 1rem;
+                .dropdown {
+                    width: 49%;
+                    float: left;
+
+                    button {
+                        width: 100%;
+                        border: 1px solid hsl(0,0%,80%);
+                        border-radius: 5px;
+                    }
+                }
+                .dropdown:first-child {
+                    margin-right: 10px;
+                }
+            }
+        }
+        .container-left {
+            float: left;
+            width: 50%;
+        }
+    }
+    .disabled {
+        pointer-events: none;
+        opacity: 0.4;
+    }
+}

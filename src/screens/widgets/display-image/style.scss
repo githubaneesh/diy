@@ -1,0 +1,10 @@
+.display-image-container {
+    position: relative;
+    text-align: center;
+
+    .spinner {
+        position: absolute;
+        top: calc(50% - 16px); //16px =  width 32/2
+        left: calc(50% - 16px);
+    }
+}

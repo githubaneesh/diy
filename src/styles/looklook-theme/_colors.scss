@@ -1,0 +1,37 @@
+/**
+    NOTE: colors varibaled name should extend with -color extenstion, 
+    so it will be easy to understand
+    For example: $sample-color
+*/
+
+$primary-color: #27a1ef;
+$secondary-color: #696969;
+$accent-blue-color: #056fc6;
+$success-color: #3adb76;
+$warning-color: #ffae00;
+$alert-color: #ec5840;
+$lighter-gray-color: #f9f9f9;
+$light-gray-color: #e0e0e0;
+$medium-gray-color: #d6d6d6;
+$dark-gray-color: #8a8a8a;
+$black-color: #0a0a0a;
+$body-background-color: #ececec;
+$body-font-color: $secondary-color;
+$light-blue-color: #a1c4ec;
+$white-color: #FFF;
+$gray-color: #DDD;
+$hover-color: #DEEBFF;
+$dark-gray: #a9a9a9;
+$medium-gray: #c3c4c3;
+$green-color: #09d3ac;
+$light-green: #e1faea;
+$alice-blue: #ebf3fc;
+$snow-color: #fafafa;
+
+
+
+$background-gradient: linear-gradient(to bottom,#0995c3,#b9e4dd);
+
+$input-background-invalid: $alert-color;
+$form-label-color-invalid: $alert-color;
+$input-error-color: $alert-color;
